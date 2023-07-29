@@ -151,15 +151,14 @@
   background: radial-gradient(circle, #a09c4d 24%, #e99494 99%); }
   .main-otros-servicios .grilla-otros-servicios {
     display: grid;
+    grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr 0.5fr;
     gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas: "administracion tasaciones" "logo-otros-servicios logo-otros-servicios";
-    background-image: radial-gradient(circle, #a09c4d 24%, #e99494 99%); }
+    grid-template-areas: "administracion tasaciones" "logo-otros-servicios logo-otros-servicios"; }
     .main-otros-servicios .grilla-otros-servicios .administracion {
       grid-area: administracion; }
-      .main-otros-servicios .grilla-otros-servicios .administracion h2 {
+      .main-otros-servicios .grilla-otros-servicios .administracion .c {
         font-family: 'Josefin Sans', sans-serif;
         text-decoration: underline black;
         background-color: #e4916e;
@@ -168,11 +167,11 @@
         margin: 20px;
         padding: 15px; }
       .main-otros-servicios .grilla-otros-servicios .administracion .img-servicios {
-        width: 700px;
-        height: 350px;
+        max-width: 500px;
+        height: 250px;
         margin: 20px;
         padding: 30px; }
-      .main-otros-servicios .grilla-otros-servicios .administracion p {
+      .main-otros-servicios .grilla-otros-servicios .administracion .parrafo-administracion {
         margin: 22px;
         padding: 20px;
         background-color: #e4916e;
@@ -183,7 +182,7 @@
         align-items: center; }
     .main-otros-servicios .grilla-otros-servicios .tasaciones {
       grid-area: tasaciones; }
-      .main-otros-servicios .grilla-otros-servicios .tasaciones h2 {
+      .main-otros-servicios .grilla-otros-servicios .tasaciones .c {
         font-family: 'Josefin Sans', sans-serif;
         text-decoration: underline black;
         background-color: #e4916e;
@@ -192,11 +191,11 @@
         margin: 20px;
         padding: 15px; }
       .main-otros-servicios .grilla-otros-servicios .tasaciones .img-servicios {
-        width: 700px;
-        height: 350px;
+        max-width: 500px;
+        height: 250px;
         margin: 20px;
         padding: 30px; }
-      .main-otros-servicios .grilla-otros-servicios .tasaciones p {
+      .main-otros-servicios .grilla-otros-servicios .tasaciones .parrafo-tasaciones {
         margin: 22px;
         padding: 20px;
         background-color: #e4916e;
@@ -206,6 +205,8 @@
         overflow: auto;
         align-items: center; }
     .main-otros-servicios .grilla-otros-servicios .logo-otros-servicios {
+      grid-area: logo-otros-servicios;
+      margin: auto;
       width: 400px;
       height: 175px; }
 
@@ -216,7 +217,7 @@
     grid-template-rows: 1fr;
     gap: 0px;
     grid-template-areas: "administracion" "tasaciones" "logo-otros-servicios" "logo-otros-servicios"; }
-  .main-otros-servicios h2 {
+  .c {
     margin: 10px;
     padding: 15px; }
   .img-servicios {
@@ -224,11 +225,12 @@
     height: 175px;
     margin: 11px;
     padding: 10px; }
-  .main-otros-servicios p {
+  .parrafo-administracion {
     margin: 11px;
     padding: 10px; }
-  .main-otros-servicios {
-    background-color: #e4916e; }
+  .parrafo-tasaciones {
+    margin: 11px;
+    padding: 10px; }
   .logo-final {
     width: 300px;
     height: 150px; } }

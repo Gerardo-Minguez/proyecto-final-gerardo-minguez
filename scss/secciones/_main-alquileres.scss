@@ -1,8 +1,8 @@
 /* 5-alquileres.html - solamente se usó html (y flex) y css para estilo - pseudoclase hover*/
 
 .main-alquileres {
-    background: rgb(160,156,77);
-background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 99%);
+    background: rgb(160, 156, 77);
+    background: radial-gradient(circle, rgba(160, 156, 77, 1) 24%, rgba(233, 148, 148, 1) 99%);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center
@@ -48,6 +48,7 @@ background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 
     background-color: $verdefondo;
     color: $naranjaboton;
 }
+
 /* media Queris - se aplicó a todo el main de alquileres.html  */
 
 @media (max-width:576px) {
@@ -55,5 +56,5 @@ background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 
     .main-alquileres ul {
         height: 50%;
         margin: auto;
-            }
+    }
 }
