@@ -1,137 +1,46 @@
-/* 3- otros-servicios.html - se usó grid - se realizo anidacion sass*/
-
 .main-otros-servicios {
     background: radial-gradient(circle, rgba(160, 156, 77, 1) 24%, rgba(233, 148, 148, 1) 99%);
-    
-    
-    .grilla-otros-servicios {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr 0.5fr;
-        gap: 10px 10px;
-        // grid-auto-flow: row;
-        grid-template-areas:
-            "administracion tasaciones"
-            "logo-otros-servicios logo-otros-servicios";
-        // background-image: radial-gradient(circle, rgba(160, 156, 77, 1) 24%, rgba(233, 148, 148, 1) 99%);
-
-        .administracion {
-            grid-area: administracion;
-           
-            .c {
-                font-family: 'Josefin Sans', sans-serif;
-                text-decoration: underline black;
-                background-color: $naranjaboton;
-                text-align: center;
-                text-transform: uppercase;
-                margin: 20px;
-                padding: 15px;
-            }
-
-            .img-servicios {
-                max-width: 500px;
-                height: 250px;
-                margin: 20px;
-                padding: 30px;
-            }
-
-            .parrafo-administracion {
-                margin: 22px;
-                padding: 20px;
-                background-color: $naranjaboton;
-                font-family: 'Josefin Sans', sans-serif;
-                border: solid 1px black;
-                height: 250px;
-                overflow: auto;
-                align-items: center;
-            }
-        }
-
-        .tasaciones {
-            grid-area: tasaciones;
-            
-            .c {
-                font-family: 'Josefin Sans', sans-serif;
-                text-decoration: underline black;
-                background-color: $naranjaboton;
-                text-align: center;
-                text-transform: uppercase;
-                margin: 20px;
-                padding: 15px;
-            }
-
-            .img-servicios {
-                max-width: 500px;
-                height: 250px;
-                margin: 20px;
-                padding: 30px;
-            }
-
-            .parrafo-tasaciones {
-                margin: 22px;
-                padding: 20px;
-                background-color: $naranjaboton;
-                font-family: 'Josefin Sans', sans-serif;
-                border: solid 1px black;
-                height: 250px;
-                overflow: auto;
-                align-items: center;
-            }
-        }
-
-        .logo-otros-servicios {
-            grid-area: logo-otros-servicios;
-            margin: auto;
-            width: 400px;
-            height: 175px;
-        }
-
-    }
 }
 
-@media (max-width:768px) {
+.c.main-otros-servicios section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
 
-    /* se aplico media queris en otros-servicios.html */
-    .main-otros-servicios .grilla-otros-servicios {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px;
-        grid-template-areas:
-            "administracion"
-            "tasaciones"
-            "logo-otros-servicios"
-            "logo-otros-servicios";
-    }
+}
 
-    .c {
-        margin: 10px;
-        padding: 15px;
-    }
+.c {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline black;
+    background-color: $naranjaboton;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 15px;
 
-    .img-servicios {
-        width: 350px;
-        height: 175px;
-        margin: 11px;
-        padding: 10px;
-    }
+}
 
-    .parrafo-administracion {
-        margin: 11px;
-        padding: 10px;
-    }
-    .parrafo-tasaciones{
-        margin: 11px;
-        padding: 10px;
-    }
+.img-servicios {
+    max-width: 500px;
+    max-height: 250px;
+    margin: auto;
+    padding: 15px;
+}
 
-    // .main-otros-servicios {
-    //     background-color: #e4916e;
-    // }
 
-    .logo-final {
-        width: 300px;
-        height: 150px;
-    }
+.parrafo-servicios {
+    margin: auto;
+    //    width: 550px;
+    padding: 20px;
+    background-color: $naranjaboton;
+    font-family: 'Josefin Sans', sans-serif;
+    border: solid 1px black;
+    overflow: auto;
+    text-align: justify;
+}
 
+.logo-otros-servicios {
+    margin: auto;
+    width: 400px;
+    height: 175px;
 }
