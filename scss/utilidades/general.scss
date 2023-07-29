@@ -1,0 +1,14 @@
+/* Se trabajo mobile-last  - Fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap');
+
+/* se utilizó BEM en todos los H1 de los html */
+
+.titulo__principal {
+    font-family: 'Belanosima', sans-serif;
+    border: solid 3px rgb(213, 169, 169);
+    text-align: center;
+    text-decoration: underline black;
+}

@@ -1,0 +1,42 @@
+/* 2- ventas.html (su usó mucho GIT)*/
+//se uso gradient en el background
+
+.englobado-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 30px;
+    padding: 20px;
+}
+
+
+.main-ventas {
+    background: rgb(160,156,77);
+background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 99%);
+}
+
+.card {
+    background-color: #d8101088;
+    max-width: 300px;
+}
+
+.card-text {
+    background-color: $rojomenu;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $naranjaboton;
+    color: black;
+}
+
+.main-ventas h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    text-decoration: underline black;
+}

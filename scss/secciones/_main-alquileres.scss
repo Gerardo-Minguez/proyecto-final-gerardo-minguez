@@ -1,0 +1,59 @@
+/* 5-alquileres.html - solamente se usó html (y flex) y css para estilo - pseudoclase hover*/
+
+.main-alquileres {
+    background: rgb(160,156,77);
+background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 99%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.main-alquileres ul {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    height: 50%;
+    width: 1350px;
+    list-style: none;
+    box-shadow: 1px 1px 1px 3px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.main-alquileres h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline black;
+    font-weight: bold;
+    font-style: italic;
+    border: 7px solid #c8a2a2
+}
+
+.main-alquileres img {
+    width: 280px;
+    height: 210px;
+}
+
+.main-alquileres li {
+    text-align: center;
+}
+
+/* se usó la pseudo clase hover */
+
+.main-alquileres input:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: $verdefondo;
+    color: $naranjaboton;
+}
+/* media Queris - se aplicó a todo el main de alquileres.html  */
+
+@media (max-width:576px) {
+
+    .main-alquileres ul {
+        height: 50%;
+        width: 500px;
+    }
+}

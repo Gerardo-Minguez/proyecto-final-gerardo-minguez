@@ -1,0 +1,22 @@
+/* 4-contacto.html - se agregó un formulario con bootstrap y se le dio estilo*/
+//se utilizo anidacion - SASS
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    background-color: $verdefondo;
+    box-shadow: 3px $rosalinks;
+    height: 450px;
+
+    .div-formulario {
+        text-align: center;
+
+        .btn-send {
+            margin: 20px;
+        }
+    }
+
+
+}
