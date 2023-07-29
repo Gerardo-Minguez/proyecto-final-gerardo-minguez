@@ -12,7 +12,8 @@
   font-family: 'Belanosima', sans-serif;
   border: solid 3px #d5a9a9;
   text-align: center;
-  text-decoration: underline black; }
+  text-decoration: underline black;
+  text-transform: uppercase; }
 
 /* HEADER CON BOOTSTRAP */
 .header {
@@ -147,17 +148,15 @@
 
 /* 3- otros-servicios.html - se usó grid - se realizo anidacion sass*/
 .main-otros-servicios {
-  background: #a09c4d;
   background: radial-gradient(circle, #a09c4d 24%, #e99494 99%); }
   .main-otros-servicios .grilla-otros-servicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.6fr 0.4fr;
-    gap: 30px 30px;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas: "administracion tasaciones" "logo-otros-servicios logo-otros-servicios";
-    background: #a09c4d;
-    background: radial-gradient(circle, #a09c4d 24%, #e99494 99%); }
+    background-image: radial-gradient(circle, #a09c4d 24%, #e99494 99%); }
     .main-otros-servicios .grilla-otros-servicios .administracion {
       grid-area: administracion; }
       .main-otros-servicios .grilla-otros-servicios .administracion h2 {
@@ -165,6 +164,12 @@
         text-decoration: underline black;
         background-color: #e4916e;
         text-align: center;
+        text-transform: uppercase;
+        margin: 20px;
+        padding: 15px; }
+      .main-otros-servicios .grilla-otros-servicios .administracion .img-servicios {
+        width: 700px;
+        height: 350px;
         margin: 20px;
         padding: 30px; }
       .main-otros-servicios .grilla-otros-servicios .administracion p {
@@ -183,6 +188,12 @@
         text-decoration: underline black;
         background-color: #e4916e;
         text-align: center;
+        text-transform: uppercase;
+        margin: 20px;
+        padding: 15px; }
+      .main-otros-servicios .grilla-otros-servicios .tasaciones .img-servicios {
+        width: 700px;
+        height: 350px;
         margin: 20px;
         padding: 30px; }
       .main-otros-servicios .grilla-otros-servicios .tasaciones p {
@@ -195,23 +206,32 @@
         overflow: auto;
         align-items: center; }
     .main-otros-servicios .grilla-otros-servicios .logo-otros-servicios {
-      grid-area: logo-otros-servicios; }
+      width: 400px;
+      height: 175px; }
 
 @media (max-width: 768px) {
   /* se aplico media queris en otros-servicios.html */
   .main-otros-servicios .grilla-otros-servicios {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "administracion" "tasaciones" "logo-otros-servicios"  "logo-otros-servicios"; }
+    gap: 0px;
+    grid-template-areas: "administracion" "tasaciones" "logo-otros-servicios" "logo-otros-servicios"; }
   .main-otros-servicios h2 {
     margin: 10px;
     padding: 15px; }
+  .img-servicios {
+    width: 350px;
+    height: 175px;
+    margin: 11px;
+    padding: 10px; }
   .main-otros-servicios p {
     margin: 11px;
     padding: 10px; }
   .main-otros-servicios {
-    background-color: #e4916e; } }
+    background-color: #e4916e; }
+  .logo-final {
+    width: 300px;
+    height: 150px; } }
 
 /* 4-contacto.html - se agregó un formulario con bootstrap y se le dio estilo*/
 .main-contacto {
