@@ -74,14 +74,15 @@ background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 
 @media (max-width:768px) {
 
     /* se aplico media queris en otros-servicios.html */
-    .grilla-otros-servicios {
+    .main-otros-servicios .grilla-otros-servicios {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "administracion"
-            "tasaciones"
-            "logo-otros-servicios"
-            "logo-otros-servicios";
+             "tasaciones"
+            "logo-otros-servicios" 
+            "logo-otros-servicios";        
     }
 
     .main-otros-servicios h2 {
