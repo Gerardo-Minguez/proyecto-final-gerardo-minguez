@@ -12,8 +12,8 @@
 
 
 .main-ventas {
-    background: rgb(160,156,77);
-background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 99%);
+    background: rgb(160, 156, 77);
+    background: radial-gradient(circle, rgba(160, 156, 77, 1) 24%, rgba(233, 148, 148, 1) 99%);
 }
 
 .card {
@@ -35,9 +35,12 @@ background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 
     color: black;
 }
 
-.btn:hoover{
+.btn:hover {
+    color: var(--bs-btn-hover-color);
     background-color: $rosalinks;
+
 }
+
 
 
 .main-ventas h3 {

@@ -138,7 +138,8 @@
   background-color: #e4916e;
   color: black; }
 
-.btn:hoover {
+.btn:hover {
+  color: var(--bs-btn-hover-color);
   background-color: #b99595; }
 
 .main-ventas h3 {
