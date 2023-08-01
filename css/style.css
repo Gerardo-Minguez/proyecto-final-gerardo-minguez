@@ -102,9 +102,15 @@
   background-color: #b99595;
   box-shadow: 10px 5px 5px;
   height: 50px;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row; }
+
+.li {
+  margin: 40px; }
 
 .footer a {
   color: #0f0f0f; }
