@@ -210,13 +210,15 @@ a {
   flex-wrap: wrap;
   align-content: center;
   justify-content: flex-start;
-  background-color: #a09c4d;
+  background: radial-gradient(circle, #a09c4d 24%, #e99494 99%);
   box-shadow: 3px #b99595;
   height: 450px; }
-  .main-contacto .div-formulario {
-    text-align: center; }
-    .main-contacto .div-formulario .btn-send {
-      margin: 20px; }
+  .main-contacto .titulo-contacto {
+    margin: 20px; }
+    .main-contacto .titulo-contacto .div-formulario {
+      text-align: center; }
+      .main-contacto .titulo-contacto .div-formulario .btn-send {
+        margin: 20px; }
 
 /* 5-alquileres.html - solamente se usó html (y flex) y css para estilo - pseudoclase hover*/
 .main-alquileres {
