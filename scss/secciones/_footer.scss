@@ -1,4 +1,4 @@
-/* FOOTER CON FLEX */
+/* FOOTER CON FLEX - SE REALIZO ANIDACION SASS*/
 .footer {
   background-color: $rojomenu;
   border: solid 3px black;
@@ -9,26 +9,34 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-end;
+
+  .ul-footer {
+    border: solid 3px black;
+    list-style: none;
+    background-color: $rosalinks;
+    box-shadow: 10px 5px 5px;
+    height: 50px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    .li {
+      margin: 40px;
+      list-style: none;
+      color: #0f0f0f;
+      list-style: none;
+
+
+    }
+  }
+
 }
 
-.footer ul {
-  border: solid 3px black;
+a {
+  color: black;
   list-style: none;
-  background-color: $rosalinks;
-  box-shadow: 10px 5px 5px;
-  height: 50px;
-  width: 350px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-
-.li {
-  margin: 40px;
-}
-
-.footer a {
-  color: #0f0f0f;
+  text-decoration: none;
 }
