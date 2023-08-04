@@ -128,8 +128,11 @@ a {
   padding: 20px; }
 
 .main-ventas {
-  background: #a09c4d;
-  background: radial-gradient(circle, #a09c4d 24%, #e99494 99%); }
+  background: radial-gradient(circle, #a09c4d 24%, #e99494 99%);
+  min-height: 70vh; }
+
+body {
+  background-color: #a09c4d; }
 
 .card {
   background-color: #d8101088;
