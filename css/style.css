@@ -214,8 +214,8 @@ body {
   align-content: center;
   justify-content: flex-start;
   background: radial-gradient(circle, #a09c4d 24%, #e99494 99%);
-  box-shadow: 3px #b99595;
-  height: 450px; }
+  min-height: 75vh;
+  box-shadow: 3px #b99595; }
   .main-contacto .titulo-contacto {
     margin: 20px; }
     .main-contacto .titulo-contacto .div-formulario {
